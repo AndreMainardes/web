@@ -1,0 +1,135 @@
+
+h1 {
+    color: blue;
+    font-size: 24px;
+    text-align: center;
+    border-style: none;
+    border-width: thin;
+  }
+h2 { 
+    color: cyan;
+    font-size: 24px;
+    text-align: center;
+    border-style: hidden;
+    border-width: thick;
+}  
+h3 {
+    color: cornflowerblue;
+    font-size: 24px;
+    text-align: center;
+    border-style: dotted;
+    border-width: thick;
+    border-color: blueviolet;
+}
+h4{
+    color: violet;
+    font-size: 24px;
+    text-align: center;
+    border-style: dashed;
+    border-width: thick;
+    border-color: aquamarine;
+}
+h5 {
+    color: plum;
+    font-size: 24px;
+    text-align: center;
+    border-style: solid;
+    border-width: thick;
+    border-color: black;
+
+}
+h6 { color: rgb(60, 25, 134);
+    font-size: 24px;
+    text-align: center;
+    border-style: double;
+    border-width: thick;
+    border-color: rgb(23, 23, 23);
+}
+p{
+    color: rgb(67, 35, 67);
+    font-size: 24px;
+    text-align: center;
+    border-style: groove;
+    border-width: thick;
+    border-color: rgba(144, 241, 0, 0.663);
+}
+.p1{
+    color: gold;
+    font-size: 24px;
+    text-align: center;
+    border-style: ridge;
+    border-width: thin;
+    border-color: blanchedalmond;
+}
+.p2{
+    color: turquoise;
+    font-size: 24px;
+    text-align: center;
+    border-style: inset;
+    border-width: thin;
+    border-color: skyblue;
+}
+.p3{
+    color: yellowgreen;
+    font-size: 24px;
+    text-align: center;
+    border-style: outset;
+    border-width: medium;
+    border-color: black;
+}
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+    color: white;
+    text-shadow: 2px 2px rgb(116, 116, 116);
+    text-transform: uppercase;
+    border: solid 2px black;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 17px;
+    background-color: hsl(49deg 98% 60%);
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+  }
+  
+  button:active {
+    transform: scale(.9);
+    transition: all 100ms ease;
+  }
+  
+  button svg {
+    transition: all .5s ease;
+    z-index: 2;
+  }
+  
+  .play {
+    transition: all .5s ease;
+    transition-delay: 300ms;
+  }
+  
+  button:hover svg {
+    transform: scale(3) translate(50%);
+  }
+  
+  .now {
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all .5s ease;
+    z-index: 2;
+  }
+  
+  button:hover .now {
+    transform: translateX(10px);
+    transition-delay: 300ms;
+  }
+  
+  button:hover .play {
+    transform: translateX(200%);
+    transition-delay: 300ms;
+  }
